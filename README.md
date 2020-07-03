@@ -9,18 +9,18 @@ Download the source code, and open the lua files.
 Open the settings, and change the settings, and you're basically done.
 
 ```lua
-local Settings = 
-{
-	-- Only allow whitelisted users from accessing your place.
+local settings = {
+	-- Only allow whitelisted users to visit the place
 	["Only Whitelisted"] = false,
-	-- A table/arrey/list of users that are whitelisted.
+	-- An array of users that are whitelisted
 	["Whitelisted Users"] = {""},
-	-- The kick message if the player isn't whitelisted.
+	-- The kick message for unwhitelisted users
 	["Whitelist Kick"] = "",
-	-- A table/arrey/list of users that are blacklisted.
+	-- An array of users that are blacklisted.
 	["Blacklisted Users"] = {"User02", "User04", "User05"}
-	-- The kick message if the player is blacklisted.
-	["Blacklist Kick"] = "You been manually blacklisted from the place."
+	-- The kick message for blacklisted users
+	["Blacklist Kick"] = "You have been manually blacklisted from the place."
 }
-return Settings
+
+return settings
 ```
